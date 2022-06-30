@@ -4,6 +4,9 @@ import Navbar from './Pages/Shared/Navbar';
 import { Routes, Route, Link } from "react-router-dom";
 import Home from './Pages/Home/Home';
 import Footer from './Pages/Shared/Footer';
+import Calender from './Pages/Calender/Calender';
+import Completed from './Pages/Completed/Completed';
+import ToDo from './Pages/ToDo/ToDo';
 
 function App() {
   return (
@@ -13,7 +16,9 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
         
-        {/* <Route path="about" element={<About />} /> */}
+        <Route path="/todo" element={<ToDo/>} /> 
+        <Route path="/completed" element={<Completed/>} /> 
+        <Route path="/calender" element={<Calender/>} /> 
       </Routes>
       <Footer></Footer>
     </div>
