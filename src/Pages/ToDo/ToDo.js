@@ -111,7 +111,9 @@ const ToDo = () => {
               renderUpdateForm()
             ) : (
               <>
+              <input type="checkbox" checked="checked" class="checkbox" />
                 <p className="item-content">{item.item}</p>
+                
                 <button
                   className="update-item"
                   onClick={() => {
