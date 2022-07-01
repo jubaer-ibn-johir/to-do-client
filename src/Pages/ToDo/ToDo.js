@@ -8,6 +8,9 @@ const ToDo = () => {
   const [listItems, setListItems] = useState([]);
   const [isUpdating, setIsUpdating] = useState("");
   const [updateItemText, setUpdateItemText] = useState("");
+  const [checked, setChecked] = useState(false);
+  console.log(checked)
+
 
   //add new todo item to database
   const addItem = async (e) => {
@@ -111,7 +114,8 @@ const ToDo = () => {
               renderUpdateForm()
             ) : (
               <>
-              <input type="checkbox" checked="checked" class="checkbox" />
+              <input type="checkbox" onClick={() => setChecked(!checked)} class="checkbox" />
+                
                 <p className="item-content">{item.item}</p>
                 
                 <button

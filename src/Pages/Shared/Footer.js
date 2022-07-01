@@ -28,3 +28,19 @@ const Footer = () => {
 };
 
 export default Footer;
+
+
+{/* <div className="todo-listItems">
+        {listItems.map((item) => (
+          <div className="todo-item">
+            <>
+              <input
+                type="checkbox"
+                onClick={() => setChecked(!checked)}
+                class="checkbox"
+              />
+              <p className="item-content">{item.item}</p>
+            </>
+          </div>
+        ))}
+      </div> */}
